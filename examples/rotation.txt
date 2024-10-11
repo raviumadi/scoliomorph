@@ -1,0 +1,38 @@
+In 3D space, angles are typically measured in a specific direction around the axes, and it’s important to understand how the rotations occur around the fixed global X, Y, and Z axes. Here’s how the angles (pitch, roll, and yaw) correspond to rotations in this context:
+
+1. Pitch (Rotation around the X-axis):
+
+	•	Definition: The pitch angle is the rotation around the global X-axis.
+	•	Positive Rotation: A positive pitch angle means that the object rotates upwards around the X-axis, tilting the YZ-plane counterclockwise when viewed from the positive X-axis.
+	•	Example: If you’re facing the positive X direction, a positive pitch will cause the front of the object to rise upward, tilting the object backward.
+	•	Negative Rotation: A negative pitch angle means that the object rotates downwards around the X-axis, tilting the YZ-plane clockwise when viewed from the positive X-axis.
+
+2. Roll (Rotation around the Y-axis):
+
+	•	Definition: The roll angle is the rotation around the global Y-axis.
+	•	Positive Rotation: A positive roll angle means that the object rotates clockwise when viewed from the positive Y-axis. In other words, the XZ-plane tilts.
+	•	Example: If you are looking along the positive Y-axis, a positive roll will make the object rotate to the right (clockwise).
+	•	Negative Rotation: A negative roll angle causes a counterclockwise rotation around the Y-axis, tilting the XZ-plane in the opposite direction.
+
+3. Yaw (Rotation around the Z-axis):
+
+	•	Definition: The yaw angle is the rotation around the global Z-axis.
+	•	Positive Rotation: A positive yaw angle means that the object rotates counterclockwise when viewed from above the positive Z-axis. This will cause the XY-plane to rotate counterclockwise.
+	•	Example: Looking from above (along the positive Z-axis), a positive yaw will rotate the object to the left.
+	•	Negative Rotation: A negative yaw angle results in a clockwise rotation when viewed from the positive Z-axis, turning the object to the right.
+
+Visualization on the Plot:
+
+In the 3D plot:
+
+	•	The red dashed line shows the principal axis corresponding to Pitch (X-axis). This line indicates how the object’s X-axis is rotated from the global X-axis.
+	•	The green dashed line shows the principal axis corresponding to Roll (Y-axis). This line indicates how the object’s Y-axis is rotated from the global Y-axis.
+	•	The blue dashed line shows the principal axis corresponding to Yaw (Z-axis). This line indicates how the object’s Z-axis is rotated from the global Z-axis.
+
+Summary of Rotation Directions:
+
+	•	Pitch (X-axis): Positive – tilts upward (nose up), Negative – tilts downward (nose down).
+	•	Roll (Y-axis): Positive – rolls right (clockwise when viewed from the front), Negative – rolls left (counterclockwise).
+	•	Yaw (Z-axis): Positive – rotates left (counterclockwise from above), Negative – rotates right (clockwise from above).
+
+Each of these rotations is relative to the fixed global coordinate system. When you see the dashed lines in the plot, they indicate how the principal axes of the object have rotated relative to the fixed X, Y, and Z axes.
