@@ -1,7 +1,7 @@
 import sys
 print(sys.path)
 
-from vbr.analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels
+from vbr_lib.vbr.analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels
 import os
 
 # Example usage

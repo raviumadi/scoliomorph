@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="vbr_lib",
+    name="scoliomorph",
     version="0.1",
     packages=find_packages(),
     install_requires=[
@@ -12,5 +12,5 @@ setup(
     description="Library for the Vertebral Body Rotation analysis from STL point cloud including pitch, roll, and yaw calculations",
     author="Ravi Umadi",
     author_email="ravisumadi@gmail.com",
-    url="https://github.com/raviumadi/vbr_lib"
+    url="https://github.com/raviumadi/scoliomorph"
 )
