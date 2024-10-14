@@ -7,7 +7,8 @@ setup(
     install_requires=[
         "numpy",
         "matplotlib",
-        "numpy-stl"
+        "numpy-stl",
+        "trimesh"
     ],
     description="Library for the Vertebral Body Rotation analysis from STL point cloud including pitch, roll, and yaw calculations",
     author="Ravi Umadi",

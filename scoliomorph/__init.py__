@@ -1,1 +1,1 @@
-from .analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels plot_point_cloud_fixed_axes
+from .analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels,plot_point_cloud_fixed_axes, normalize_angles, calculate_vbc_profile, plot_vbc_profile, normalize_angles, set_axes_equal, plot_stl_files
