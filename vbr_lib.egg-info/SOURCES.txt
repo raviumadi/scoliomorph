@@ -1,0 +1,7 @@
+README.md
+setup.py
+vbr_lib.egg-info/PKG-INFO
+vbr_lib.egg-info/SOURCES.txt
+vbr_lib.egg-info/dependency_links.txt
+vbr_lib.egg-info/requires.txt
+vbr_lib.egg-info/top_level.txt

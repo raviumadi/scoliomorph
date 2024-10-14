@@ -84,3 +84,49 @@ def plot_2d_angles_with_labels(pitch, roll, yaw, principal_axes, centered_points
     # Show the 2D plot
     plt.tight_layout()
     plt.show()
+    
+    # Function to plot point cloud and principal axes with fixed global coordinate system and angular lines
+def plot_point_cloud_fixed_axes(centered_points, principal_axes, pitch, roll, yaw, prev_centroid_shift):
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    
+    # Adjust points by centroid shift to simulate stacking
+    # adjusted_points = centered_points + prev_centroid_shift
+    # If you want to disable stacking correction, comment the line above and uncomment the line below
+    adjusted_points = centered_points
+    
+    # Plot points
+    ax.scatter(adjusted_points[:, 0], adjusted_points[:, 1], adjusted_points[:, 2], s=1, color='gray', alpha=0.5)
+    
+    # Define the scale of the axes
+    scale = 50
+    
+    # Plot global X, Y, Z axes for reference (fixed global coordinate system)
+    ax.quiver(0, 0, 0, scale, 0, 0, color='r', label='Global X Axis')
+    ax.quiver(0, 0, 0, 0, scale, 0, color='g', label='Global Y Axis')
+    ax.quiver(0, 0, 0, 0, 0, scale, color='b', label='Global Z Axis')
+
+    # Plot lines to show angular rotation relative to the global axes
+    # Red line for X-axis
+    ax.plot([0, principal_axes[0, 0] * scale], [0, principal_axes[1, 0] * scale], [0, principal_axes[2, 0] * scale], 
+            color='r', linestyle='--', linewidth=0.8, label='Pitch Angle')
+
+    # Green line for Y-axis
+    ax.plot([0, principal_axes[0, 1] * scale], [0, principal_axes[1, 1] * scale], [0, principal_axes[2, 1] * scale], 
+            color='g', linestyle='--', linewidth=0.8, label='Roll Angle')
+
+    # Blue line for Z-axis
+    ax.plot([0, principal_axes[0, 2] * scale], [0, principal_axes[1, 2] * scale], [0, principal_axes[2, 2] * scale], 
+            color='b', linestyle='--', linewidth=0.8, label='Yaw Angle')
+
+    # Show the angles in a consistent reference frame
+    ax.text2D(0.05, 0.95, f'Pitch: {pitch:.2f}°\nRoll: {roll:.2f}°\nYaw: {yaw:.2f}°', transform=ax.transAxes)
+    
+    # Set labels and fixed view
+    ax.set_xlabel('X')
+    ax.set_ylabel('Y')
+    ax.set_zlabel('Z')
+    ax.view_init(elev=20, azim=30)  # Fix view for consistency across plots
+    
+    # Show plot
+    plt.show()

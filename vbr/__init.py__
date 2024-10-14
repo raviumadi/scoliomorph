@@ -1,1 +1,1 @@
-from .analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels
+from .analysis import load_stl_file, calculate_principal_axes, plot_2d_angles_with_labels plot_point_cloud_fixed_axes
