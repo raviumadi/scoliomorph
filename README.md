@@ -1,4 +1,4 @@
-# Scoliomorph: An STL Analysis Library for Vertebral Body Point Cloud
+# Scoliomorph: A Spatial Orientation Analysis Library for Vertebral Body Point Cloud
 
 This library provides tools to load STL files, compute pitch, roll, and yaw angles based on the principal axes, and visualize the results.
 
@@ -127,7 +127,23 @@ by converting them to their complementary angles if they exceed 90° or -90°.
 
 - `normalize_angle()`
   - Normalize an individual angle to stay within [-90°, 90°].
-  
+
+## Cite as
+
+If you use this project in your research, please cite it as follows:
+
+```bibtex
+@misc{umadi2024project,
+  author = {Ravi Umadi},
+  title = {Scoliomorph: A Spatial Orientation Analysis Library for Vertebral Body Point Cloud},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/raviumadi/scoliomorph}},
+  version = {1.0}
+  note = {Klinikum rechts der Isar, TUM School of Medicine, Klinik für Orthopädie und Sportorthopädie, Ismaninger Str. 22, 81675 München}
+}
+```
 ## Contributing
 
 If you’d like to contribute, feel free to open issues or submit pull requests.
