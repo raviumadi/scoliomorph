@@ -4,5 +4,9 @@ This library provides tools to load STL files, compute pitch, roll, and yaw angl
 
 ## Installation
 
+### 1. Clone the Repository
+
 ```bash
+git clone git@github.com:raviumadi/scoliomorph.git
+cd scoliomorph/
 pip install -e .

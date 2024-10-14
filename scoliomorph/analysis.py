@@ -86,7 +86,7 @@ def plot_2d_angles_with_labels(pitch, roll, yaw, principal_axes, centered_points
     plt.show()
     
     # Function to plot point cloud and principal axes with fixed global coordinate system and angular lines
-def plot_point_cloud_fixed_axes(centered_points, principal_axes, pitch, roll, yaw, prev_centroid_shift):
+def plot_point_cloud_fixed_axes(centered_points, principal_axes, pitch, roll, yaw):
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     
