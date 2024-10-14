@@ -37,6 +37,7 @@ def calculate_principal_axes(selected_points):
 
 # Function to calculate and store results
 def calculate_vbc_profile(folder_path):
+    """ Calculate the vertebral column geometric properties for each STL file in the folder."""
     result = []
 
     # Loop through sorted STL files in the folder
@@ -124,6 +125,7 @@ def plot_2d_angles_with_labels(pitch, roll, yaw, principal_axes, centered_points
 
 # Function to plot point cloud and principal axes with fixed global coordinate system and angular lines
 def plot_point_cloud_fixed_axes(centered_points, principal_axes, pitch, roll, yaw):
+    """ Plot the point cloud with fixed global coordinate system and angular lines."""
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
     
@@ -226,6 +228,7 @@ def plot_stl_files(folder_path, plot_type='pointcloud', color='blue', alpha=1.0)
     
 # Function to plot stacked points with vectors showing angles
 def plot_vbc_profile(result):
+    """Plot the point cloud centroids of the vertebral column units with pitch, roll, and yaw vectors"""
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
 

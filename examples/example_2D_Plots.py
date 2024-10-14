@@ -37,9 +37,10 @@ else:
             centroid = np.mean(points, axis=0)
             centered_points = points - centroid
             
-            # Select points below y=0
+            # Select points below y=0, only the body part. Test method
             # selected_points = centered_points[centered_points[:, 1] < 0]
-            # Check with the original point cloud
+            
+            # Continue with the original point cloud
             selected_points = points
             
             # Calculate pitch, roll, and yaw
