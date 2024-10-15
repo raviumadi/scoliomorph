@@ -1,3 +1,8 @@
 scoliomorph.egg-info/
 utils/dochelp.py
 utils/pushGithub.sh
+# Ignore everything in doc/ directory
+doc/*
+
+# But do not ignore PDF files
+!doc/*.pdf

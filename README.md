@@ -1,18 +1,9 @@
 # Scoliomorph: A Spatial Orientation Analysis Library for Vertebral Body Point Cloud
 
-This library provides tools to load STL files, compute pitch, roll, and yaw angles based on the principal axes, and visualize the results.
+This library provides tools to load [STL](stl/01_CTACardio%20segmentation_L3%20vertebra.stl) files, compute pitch, roll, and yaw angles based on the principal axes, and visualize the results.
 
-## Data
-The example stl files are extracted using [Auto3DSeg](https://github.com/lassoan/SlicerMONAIAuto3DSeg) extension for [3D Slicer](https://www.slicer.org) using the example dataset. The segmentation was exported as .stl and the files were inspected and extra vertices were cleaned up using [Blender](https://www.blender.org).
-
-## Results
-To interpret the rotational angles, see [Rotational Reference](examples/rotation.txt).
-
-![L3 Vertebral Body Example 1](img/vbr_Figure_1.png)
-![T12 Vertebral Body Example 2](img/vbr_Figure_2.png)
-![Cloumn View 1](img/3D_1.png)
-![Cloumn View 2](img/3D_2.png)
-![Cloumn Stack View](img/vbr_stack.png)
+## Method
+See the [Method Description](doc/Method.pdf) with figures
 
 ## Installation 
 
