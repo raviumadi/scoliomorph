@@ -152,6 +152,7 @@ If you’d like to contribute, feel free to open issues or submit pull requests.
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
+
 ## Bibliography
 1. Masharawi, Youssef and Salame, Khalil and Mirovsky, Yigal and Peleg, Smadar and Dar, Gali and Steinberg, Nili and Hershkovitz, Israel, "Vertebral body shape variation in the thoracic and lumbar spine: {Characterization} of its asymmetry and wedging", *Clinical Anatomy*, 2008, 21(1), 46--54.
 
@@ -162,4 +163,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 4. Lecron, Fabian and Benjelloun, Mohammed and Mahmoudi, Saïd, *Fully automatic vertebra detection in x-ray images based on multi-class {SVM}*, 2012.
 
 5. Goris, B. C. E. and Kuipers, M. and De Vries, J. and Wever, D. J. and Verkerke, G. J. and Veldhuizen, A. G., "On the {Determination} of the {Angular} {Orientation} of a {Vertebra}", *Journal of Biomechanical Engineering*, 2002, 124(1), 134--136.
-
