@@ -54,7 +54,7 @@ source .venv/bin/activate  # On Linux/macOS
 ```bash 
 pip install -e . 
 ```
-
+ 
 ## Usage
 
 ### 1. Load STL Files and Perform Analysis
