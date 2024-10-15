@@ -15,18 +15,21 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-      
-    - name: Install dependencies
+
+    - name: Create and activate virtual environment
       run: |
+        python3 -m venv venv
+        source venv/bin/activate
         pip install pypandoc bibtexparser
 
-    - name: Run update script
+    - name: Run update script in virtual environment
       run: |
+        source venv/bin/activate
         python utils/update_bibliography.py
 
     - name: Check for changes
@@ -49,13 +52,21 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      
-    - name: Install pandoc and LaTeX
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install pandoc, LaTeX, and create virtual environment
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-plain-generic
+        python3 -m venv venv
+        source venv/bin/activate
         pip install Pygments
 
     - name: Generate PDF from README.md using custom LaTeX template
       run: |
+        source venv/bin/activate
         pandoc README.md -o README.pdf --template=utils/template.tex --pdf-engine-opt=-shell-escape --listings

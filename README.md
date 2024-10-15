@@ -123,7 +123,7 @@ by converting them to their complementary angles if they exceed 90° or -90°.
 - `normalize_angle()`
   - Normalize an individual angle to stay within [-90°, 90°].
 
-## Cite as
+## Cite as 
 
 If you use this project in your research, please cite it as follows:
 
