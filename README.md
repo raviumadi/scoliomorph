@@ -19,7 +19,7 @@ To interpret the rotational angles, see [Rotational Reference](examples/rotation
 ![View 2](img/3D_2.png)
 ![Stack View](img/vbr_stack.png)
 
-## Installation
+## Installation 
 ### Option 1: Install Directly from GitHub
 
 You can install Scoliomorph directly from the GitHub repository using `pip`:
