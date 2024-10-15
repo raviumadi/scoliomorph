@@ -1,0 +1,38 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize,
+    breaklines=true,                % Enable line breaking for long lines
+    breakatwhitespace=true,          % Break at white space if possible
+    columns=fullflexible,            % Better handling of monospaced fonts
+    backgroundcolor=\color{gray!10}, % Optional: light background for code blocks
+    frame=single,                    % Optional: frame around code blocks
+}
+
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\begin{document}
+
+$if(title)$
+\title{$title$}
+$endif$
+
+$if(author)$
+\author{$for(author)$$author$$sep$ \and $endfor$}
+$endif$
+
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$body$
+
+\end{document}

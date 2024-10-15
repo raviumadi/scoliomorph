@@ -30,7 +30,7 @@ pip install git+https://github.com/raviumadi/scoliomorph.git
 
 ### Option 2 - Git clone and Install
 
-### 1. Clone the Repository
+### 1. Clone the Repository 
 
 ```bash
 git clone git@github.com:raviumadi/scoliomorph.git
