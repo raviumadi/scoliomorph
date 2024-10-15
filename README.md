@@ -159,3 +159,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 4. Lecron, Fabian and Benjelloun, Mohammed and Mahmoudi, Saïd, *Fully automatic vertebra detection in x-ray images based on multi-class {SVM}*, 2012.
 
 5. Goris, B. C. E. and Kuipers, M. and De Vries, J. and Wever, D. J. and Verkerke, G. J. and Veldhuizen, A. G., "On the {Determination} of the {Angular} {Orientation} of a {Vertebra}", *Journal of Biomechanical Engineering*, 2002, 124(1), 134--136.
+

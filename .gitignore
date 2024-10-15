@@ -1,2 +1,3 @@
 scoliomorph.egg-info/
 utils/dochelp.py
+utils/pushGithub.sh
