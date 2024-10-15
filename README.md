@@ -15,6 +15,7 @@ To interpret the rotational angles, see [Rotational Reference](examples/rotation
 ![Cloumn Stack View](img/vbr_stack.png)
 
 ## Installation 
+
 ### Option 1: Install Directly from GitHub
 
 You can install Scoliomorph directly from the GitHub repository using `pip`:

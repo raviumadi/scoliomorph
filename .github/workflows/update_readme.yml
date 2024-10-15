@@ -70,3 +70,17 @@ jobs:
       run: |
         source venv/bin/activate
         pandoc README.md -o README.pdf --template=utils/template.tex --pdf-engine-opt=-shell-escape --listings
+
+    - name: Check for changes (PDF)
+      id: pdf_changes
+      run: |
+        git diff --quiet README.pdf || echo "PDF changes detected"
+
+    - name: Commit and push generated PDF
+      if: steps.pdf_changes.outputs.changes == 'PDF changes detected'
+      run: |
+        git config --global user.name 'GitHub Actions'
+        git config --global user.email 'actions@github.com'
+        git add README.pdf
+        git commit -m 'Add PDF version of README'
+        git push
