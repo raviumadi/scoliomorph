@@ -8,16 +8,11 @@ The example stl files are extracted using [Auto3DSeg](https://github.com/lassoan
 ## Results
 To interpret the rotational angles, see [Rotational Reference](examples/rotation.txt).
 
-### L3
-![Vertebral Body Example 1](img/vbr_Figure_1.png)
-
-### T12
-![Vertebral Body Example 2](img/vbr_Figure_2.png)
-
-### Cloumn 
-![View 1](img/3D_1.png)
-![View 2](img/3D_2.png)
-![Stack View](img/vbr_stack.png)
+![L3 Vertebral Body Example 1](img/vbr_Figure_1.png){width=80%}
+![T12 Vertebral Body Example 2](img/vbr_Figure_2.png){width=80%}
+![Cloumn View 1](img/3D_1.png){width=80%}
+![Cloumn View 2](img/3D_2.png){width=80%}
+![Cloumn Stack View](img/vbr_stack.png){width=80%}
 
 ## Installation 
 ### Option 1: Install Directly from GitHub

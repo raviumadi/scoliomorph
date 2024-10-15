@@ -54,7 +54,8 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-plain-generic
+        pip install Pygments
 
     - name: Generate PDF from README.md using custom LaTeX template
       run: |
-        pandoc README.md -o README.pdf --template=utils/template.tex
+        pandoc README.md -o README.pdf --template=utils/template.tex --pdf-engine-opt=-shell-escape --listings

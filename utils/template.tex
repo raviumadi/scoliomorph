@@ -1,7 +1,25 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{listings}
+\usepackage[T1]{fontenc}     % Use T1 font encoding for proper character rendering
+\usepackage{listingsutf8}
 \usepackage{xcolor}
+\usepackage{minted}  % Add minted to handle syntax highlighting
+\usepackage{hyperref}  % Add hyperref for handling URLs and links
+\usepackage{graphicx}  % Add graphicx for handling images
+\usepackage{float}     % Add float for handling figure positioning
+\usepackage{framed}    % Add framed to handle Shaded environment
+\usepackage{fancyvrb}  % Add fancyvrb to handle code block formatting
+\usepackage{caption}
+\setcounter{secnumdepth}{0}
+% Define the shadecolor for the Shaded environment
+\definecolor{shadecolor}{rgb}{0.9, 0.9, 0.9}  % Light gray background
+
+% Configuration for minted (code blocks with syntax highlighting)
+\usemintedstyle{friendly}  % You can choose another style if you prefer
+
+\title{Documentation}
+\author{Ravi Umadi}
+\date{}
 
 \lstset{
     basicstyle=\ttfamily\footnotesize,
@@ -12,20 +30,61 @@
     frame=single,                    % Optional: frame around code blocks
 }
 
+% Configure hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Markdown to PDF},
+    bookmarks=true,
+    pdfpagemode=FullScreen,
+}
 \usepackage{geometry}
 \geometry{a4paper, margin=1in}
+% Define \passthrough to avoid undefined control sequence error
+\let\passthrough=\texttt
+% Define \tightlist to avoid undefined control sequence error
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+% Define \pandocbounded to avoid undefined control sequence error
+\newenvironment{pandocfigure}{}{}
+\let\pandocbounded\pandocfigure
+% Handle image scaling: automatically scale large images to fit within \linewidth
+\setkeys{Gin}{width=\linewidth, keepaspectratio}
+
+% Redefine \includegraphics to automatically wrap images in figure[H] environment
+\let\OldIncludeGraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \begin{figure}[H]
+    \centering
+    \OldIncludeGraphics[#1]{#2}
+  \end{figure}
+}
+% UTF-8 support for listings
+\lstset{
+  inputencoding=utf8,    % Allow UTF-8 in code listings
+  extendedchars=true,    % Support extended characters
+  literate={ä}{{\"a}}1   % Escape German characters manually in listings
+           {ö}{{\"o}}1
+           {ü}{{\"u}}1
+           {ß}{{\ss}}1
+}
+
+
+% Define the Shaded environment for handling code blocks with shading
+\newenvironment{Shaded}{
+    \begin{snugshade}
+}{
+    \end{snugshade}
+}
 
 \begin{document}
 
-$if(title)$
-\title{$title$}
-$endif$
-
-$if(author)$
-\author{$for(author)$$author$$sep$ \and $endfor$}
-$endif$
 
 \maketitle
+\newpage
+
 
 $if(abstract)$
 \begin{abstract}
