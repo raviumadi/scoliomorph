@@ -1,0 +1,28 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\begin{document}
+\begin{tikzpicture}
+
+    % Define colors
+    \definecolor{curve}{RGB}{79, 0, 83}
+    \definecolor{arrow1}{RGB}{1, 168, 29  }
+    \definecolor{arrow2}{RGB}{107, 2, 55}
+    \definecolor{headfont}{RGB}{128, 52, 234}
+    \definecolor{bottomfont}{RGB}{128, 52, 234}
+
+    % Load your custom font
+    \newfontface\customfont{Leorio}[Path=./, Extension=.ttf]
+    
+	\draw[thick, black, <->, red] (11, -0.2) -- (13,0.2);
+    \draw[thick, red, <->, arrow1] (11.2, 0.4) -- (12.8,-0.4);
+	 \draw[line width=2mm, headfont] 
+    (12, -2) .. controls (14, -1) and (10, 1) .. (12, 2);
+    % Add text overlay
+    \node[align=center, font=\customfont, scale=4, text=headfont] at (5, 0) {SCOLIOMORPH};
+    \node[align=center, font=\customfont, scale=2, text=bottomfont] at (5, -1.6) {ToolKit};
+
+\end{tikzpicture}
+
+\end{document}

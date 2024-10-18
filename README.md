@@ -1,9 +1,10 @@
+![](logo/logo.png)
 # Scoliomorph: A Spatial Orientation Analysis Library for Vertebral Body Point Cloud
 
 This library provides tools to load [STL](stl/01_CTACardio%20segmentation_L3%20vertebra.stl) files, compute pitch, roll, and yaw angles based on the principal axes, and visualize the results.
 
 ## Method
-See the [Method Description](doc/Method.pdf) with figures
+See the [Method Description](doc/Method.pdf) with figures.
 
 ## Installation 
 

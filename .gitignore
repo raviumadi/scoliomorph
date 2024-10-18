@@ -1,8 +1,21 @@
 scoliomorph.egg-info/
 utils/dochelp.py
 utils/pushGithub.sh
+
+# local development files
+dev/ 
+
+# local matlab
+mat/
+
 # Ignore everything in doc/ directory
 doc/*
 
 # But do not ignore PDF files
 !doc/*.pdf
+
+# Files in developement - remove when ready
+scoliomorph/scoliomorph_ui
+scoliomorph/measure.py
+scoliomorph/modelling.py.DS_Store
+scoliomorph/data.py

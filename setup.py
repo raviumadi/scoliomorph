@@ -8,7 +8,8 @@ setup(
         "numpy",
         "matplotlib",
         "numpy-stl",
-        "trimesh"
+        "trimesh",
+        # 'tkinter' - Optional; already included in Python installations
     ],
     description="Library for the Vertebral Body Rotation analysis from STL point cloud including pitch, roll, and yaw calculations",
     author="Ravi Umadi",
