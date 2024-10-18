@@ -19,4 +19,7 @@ scoliomorph/scoliomorph_ui
 scoliomorph/measure.py
 scoliomorph/modelling.py.DS_Store
 scoliomorph/data.py
-logo
+
+# Everything other than logo.png in logo directory
+logo/*
+!logo/logo.png
